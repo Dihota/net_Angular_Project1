@@ -7,7 +7,7 @@ namespace Backend.Models
 
         [Key]
         public int Id { get; set; }
-        public int DocumentId { get; set; }
+        public Int64 DocumentId { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public string Email { get; set; }
@@ -15,6 +15,6 @@ namespace Backend.Models
         public string Rol { get; set; }
         public DateTime FechRegistro { get; set; }
         public string CodValid { get; set; }
-        public int Celular { get; set; }
+        public Int64 Celular { get; set; }
     }
 }

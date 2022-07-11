@@ -34,16 +34,16 @@ namespace Backend.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<int>("Celular")
-                        .HasColumnType("int");
+                    b.Property<long>("Celular")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("CodValid")
                         .IsRequired()
                         .HasMaxLength(6)
                         .HasColumnType("nvarchar(6)");
 
-                    b.Property<int>("DocumentId")
-                        .HasColumnType("int");
+                    b.Property<long>("DocumentId")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("Email")
                         .IsRequired()
