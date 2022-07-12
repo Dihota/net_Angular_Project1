@@ -1,0 +1,11 @@
+.col-5{
+    background-color: rgba(70, 16, 121, 0.726);
+    height: 1000px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.col-7 h4{
+    margin-top: 50px;
+    margin-left: 50px;
+}
