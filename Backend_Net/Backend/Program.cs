@@ -1,12 +1,28 @@
 using Backend;
 using Microsoft.EntityFrameworkCore;
 
+var policyName = "_myAllowSpecificOrigins"; // variable que definira las politicas de cors
 var builder = WebApplication.CreateBuilder(args);
+
 
 //Inyecsion de dependencias 
 var connectionStrings = builder.Configuration.GetConnectionString("DefaultConex");
 builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(connectionStrings));
+
+//construye la politica, inidcando que permitira todos lso origenes, todos los metodos y todos los encabezados
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: policyName,
+                      builder =>
+                      {
+                          builder
+                            .AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                      });
+});
+
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -25,6 +41,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//
+app.UseCors(policyName);
 
 app.UseAuthorization();
 
