@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-6" >
+            <form action="" class="form-loguin">
+                <h1 style="text-align: center;color: rgba(70, 16, 121, 0.726); margin-top: 20%;">Registro</h1>
+              
+                <div class="row">
+                    <div class="col">
+                        <input type="number" class="form-control" id="InpNombre"  placeholder="Cedula">    
+                        <input type="text" class="form-control" id="InpNombre"  placeholder="Nombre">                             
+                        <input type="password" class="form-control" id="InpNombre"  placeholder="Contraseña" maxlength="8">                                                     
+                        <input type="tel" class="form-control" id="InpNombre"  placeholder="Celular">                                                     
+
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="InpApellidos"  placeholder="Apellido">     
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>Tipo Usuario...</option>
+                              <option value="1">Administrador</option>
+                              <option value="2">Usuario</option>
+                            </select>
+                        <input type="datetime-local" class="form-control" id="InpApellidos"  placeholder="Nombre">     
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="InpNombre" placeholder="Correo" >                    
+                </div>
+                <button  class="btn-principal" [routerLink]="['']"> REGISTRAR</button>
+            </form>
+        </div>
+        <div class="col-3">
+        </div>
+    </div>
+</div>
