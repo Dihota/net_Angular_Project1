@@ -1,27 +1,27 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-7">
-        <h4>Hola</h4>
+
         </div>
         <div class="col-5">
             <form action="" class="form-loguin">
                 <h1>Sign In</h1>
                 <div class="form-group">
-                    <label for="">EMAIL</label>
+                    <label for="" style="font-weight: bold;">EMAIL</label>
                     <input type="email" class="form-control" id="InpEmail" placeholder="Ingrese correo electronico">                    
                 </div>
                 <div class="form-group">
-                    <label for="">PASSWORD</label>
-                    <input type="password" class="form-control" id="InpPass" placeholder="Ingrese su contraseña">
+                    <label for="" style="font-weight: bold;">PASSWORD</label>
+                    <input type="password" class="form-control" id="InpPass" placeholder="Ingrese su contraseña" maxlength="8" title="Maximo 8 caracteres, alfanumericos.">
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input"  id="InpRecord">
-                    <label for="" class="form-check-label"> Recordarme</label>
+                    <input type="checkbox" class="form-check-input"  id="InpRecord" title="Hola">
+                    <label for="" class="form-check-label" > Recordarme</label>
                 </div>
-                <button  class="btn-principal"> INGRESAR</button>
+                <button  class="btn-principal" [routerLink]="['/footer']"> INGRESAR</button>
                 <div class="form-regist">
-                    <label for="">No estas registrado?</label>
-                    <a href=""> Check in</a>
+                    <label for="" >No estas registrado?</label>
+                    <a [routerLink]="['/footer']" style="font-weight: bold;"> Check in</a>
                 </div>     
             </form>
         </div>

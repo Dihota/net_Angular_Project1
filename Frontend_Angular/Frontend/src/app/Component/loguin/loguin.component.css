@@ -1,5 +1,8 @@
 .col-7{
     background-color: rgba(70, 16, 121, 0.726);
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/638/635/large_2x/e-alphabet-logo-letter-for-business-and-company-with-geometric-style-and-pastel-color-corporate-brading-and-icon-lettering-with-simple-blue-design-vector.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
     height: 100vh;
     text-align: center;
     color: aliceblue;
@@ -21,7 +24,7 @@
 }
 
 .form-check{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .btn-principal{
@@ -32,3 +35,4 @@
  margin-top: 8%;
  text-align: center;
 }
+
