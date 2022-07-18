@@ -1,0 +1,17 @@
+.form-control{
+    margin-top: 5%;    
+}
+
+.custom-select{
+    margin-top: 5%;
+    height: 38px;
+    width: 100%;
+    border-radius: 5px;
+    border-color: rgb(216, 208, 208);
+    color: rgb(129, 126, 126);
+}
+
+.btn-principal{
+    margin-top: 5%;
+}
+

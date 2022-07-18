@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.btn-principal{
+    background-color: rgba(70, 16, 121, 0.726);
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    border-style: hidden;
+}
+
